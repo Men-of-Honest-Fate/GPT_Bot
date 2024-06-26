@@ -3,6 +3,7 @@ from telebot.util import async_dec
 import logging
 import os
 import sys
+import pyTelegramBotAPI
 import asyncio
 import telebot
 import dotenv

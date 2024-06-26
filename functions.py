@@ -4,7 +4,7 @@ import logging
 import os
 import sys
 import asyncio
-import telebot
+import pyTelegramBotAPI
 import dotenv
 from telebot.async_telebot import AsyncTeleBot
 from main import bot, HEADERS
