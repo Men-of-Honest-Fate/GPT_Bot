@@ -23,3 +23,10 @@ async def welcome(message):
         text=str(response),
         parse_mode="MarkdownV2"
     )
+
+@staticmethod
+@bot.message_handler(commands=["stop"])
+async def stop_dialog(message: types.Message, state: FSMContext):
+        await state.finish()
+        TG_BOT.messages = []
+        await message.reply(text="Диалог остановлен")
