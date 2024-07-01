@@ -7,7 +7,6 @@ import pyTelegramBotAPI
 import asyncio
 import telebot
 import dotenv
-import functions
 from telebot.async_telebot import AsyncTeleBot
 logging.basicConfig(level=logging.INFO)
 dotenv.load_dotenv()

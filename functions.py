@@ -6,7 +6,9 @@ import sys
 import asyncio
 import pyTelegramBotAPI
 import dotenv
+from main import *
 from telebot.async_telebot import AsyncTeleBot
+from
 from main import bot, HEADERS
 @async_dec()
 
