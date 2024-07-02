@@ -38,8 +38,8 @@ async def welcome(message):
     )
 @bot.message_handler(commands=["stop"])
 async def stop_dialog(message):
-
-        await message.reply(text="Диалог остановлен")
+    message.reply(text="Диалог остановлен")
+    await bot.stop_polling()
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
